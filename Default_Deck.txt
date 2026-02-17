@@ -1,0 +1,29 @@
+Monster
+3 Legendary Fire King Ponix ;Fire
+3 Fire King Courtier Ulcanix ;Fire
+3 Fire King High Avatar Kirin ;Fire
+3 Sacred Fire King Garunix ;Fire
+1 Fire King Avatar Kirin ;Fire
+1 Fire King High Avatar Garunix ;Fire
+1 Fire King Avatar Arvata ;Fire
+1 Miscellaneousaurus ;Fire
+3 Jurrac Megalo ;Fire
+3 Mulcharmy Fuwalos
+3 Mulcharmy Purulia
+3 Ash Blossom & Joyous Spring ;Fire
+Spell
+3 Fire King Sanctuary
+2 Fire King Island
+1 Fire King Sky Burn
+1 Pot of Prosperity
+1 Called by the Grave
+3 Forbidden Droplet
+1 Triple Tactics Talent
+
+:Playabal Hands
+Legendary Fire King Ponix
+Fire King Courtier Ulcanix ; Fire
+Miscellaneousaurus ; Sacred Fire King Garunix ; Fire King High Avatar Kirin
+
+:gamble effects
+Pot of Prosperity ;3;1;
