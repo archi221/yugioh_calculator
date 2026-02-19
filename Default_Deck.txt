@@ -22,8 +22,8 @@ Spell
 
 :Playabal Hands
 Legendary Fire King Ponix
-Fire King Courtier Ulcanix ; Fire
-Miscellaneousaurus ; Sacred Fire King Garunix ; Fire King High Avatar Kirin
+Fire King Courtier Ulcanix ;Fire
+Miscellaneousaurus ;Sacred Fire King Garunix ;Fire King High Avatar Kirin
 
 :gamble effects
-Pot of Prosperity ;3;1;
+Pot of Prosperity ;3;1
