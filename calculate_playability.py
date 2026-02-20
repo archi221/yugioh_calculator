@@ -79,27 +79,58 @@ def read_decklist(file):
 
                 line_list = line.split(";")
                 assert len(line_list) == 3 , "nicht genug angaben für gamba effekt"
-                gamba[line_list[0]] = (line_list[1], line_list[2])
-
+                gamba[id_to_cards.index(line_list[0].strip())] = (int(line_list[1]), int(line_list[2]))
+    #Todo check for unique playabal hands
     return deck, id_to_cards, playabal_hands, gamba
 
 def IsHandPlayabal(deck, playabal_hands, gamba):
-    print("Hello World!")
+    playabal_gamba = False
+    playabal = False
+    drawn_cards_set = set(deck[:5])
+    gamba_cards = gamba.keys()
+    #print(f"Drawn Cards: {drawn_cards_set}")
+    #print(f"playabal hands: {playabal_hands}")
+    #print(f"issin: {np.isin(playabal_hands, drawn_cards_set)}")
+    for combo in playabal_hands:
+        if all(card in drawn_cards_set for card in combo):
+            playabal = True
+    if playabal:
+        return playabal, playabal
+    for card in gamba_cards:
+        if card in drawn_cards_set:
+            look_amount, draws_amount = gamba[card]
+            looks = deck[6:6 + look_amount]
+            for gamba_card in looks:
+                drawn_cards_set.add(gamba_card)
+                for combo in playabal_hands:
+                    if all(_card in drawn_cards_set for _card in combo):
+                        playabal_gamba = True
+                        return playabal, playabal_gamba
+    return playabal, playabal_gamba
+
 
 def TestDeckConsistency(file):
     deck, id_to_cards, playabal_hands, gamba = read_decklist(file)
     print(f"""
 Calculating Probability for {len(deck)} Card Deck
 
-Unique Cards: {', '.join(id_to_cards)}
-
 Unique Playabal_hands: {len(playabal_hands)}
 """)
+    testing_hands = 2_000_000
     counter = 0
-    for i in range(1,000,000):
-        if IsHandPlayabal(deck, playabal_hands, gamba):
+    gamba_counter = 0
+    deck = np.array(deck)
+
+    for i in range(testing_hands):
+        np.random.shuffle(deck)
+        normal_playability , gamba_playability = IsHandPlayabal(deck, playabal_hands, gamba)
+        if normal_playability:
             counter += 1
-    print(counter / 1,000,000 * 100)
+        if gamba_playability:
+            gamba_counter += 1
+    print(f"Playabal: {counter / testing_hands * 100}% of times")
+    print(f"Playabal with gambling: {gamba_counter / testing_hands * 100}% of times")
+
 def main():
     TestDeckConsistency(file)
     print("Hello World!")

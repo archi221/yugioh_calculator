@@ -3,27 +3,37 @@ Monster
 3 Fire King Courtier Ulcanix ;Fire
 3 Fire King High Avatar Kirin ;Fire
 3 Sacred Fire King Garunix ;Fire
+1 Miscellaneousaurus ;Fire
+3 Jurrac Megalo ;Fire
 1 Fire King Avatar Kirin ;Fire
 1 Fire King High Avatar Garunix ;Fire
 1 Fire King Avatar Arvata ;Fire
-1 Miscellaneousaurus ;Fire
-3 Jurrac Megalo ;Fire
 3 Mulcharmy Fuwalos
-3 Mulcharmy Purulia
-3 Ash Blossom & Joyous Spring ;Fire
+1 Animadorned Archosaur
 Spell
-3 Fire King Sanctuary
-2 Fire King Island
-1 Fire King Sky Burn
-1 Pot of Prosperity
+3 Fire King Sanctuary ;Field
+2 Fire King Island ;Field
 1 Called by the Grave
+1 Fire King Sky Burn
+3 Super Polymerization
 3 Forbidden Droplet
-1 Triple Tactics Talent
+1 Pot of Prosperity
+3 Fossil Dig ;Fire
+
 
 :Playabal Hands
 Legendary Fire King Ponix
 Fire King Courtier Ulcanix ;Fire
-Miscellaneousaurus ;Sacred Fire King Garunix ;Fire King High Avatar Kirin
+Fire ;Field
+Fire ;Sacred Fire King Garunix ;Fire King High Avatar Kirin
+Sacred Fire King Garunix; Miscellaneousaurus
+Fire King High Avatar Kirin; Jurrac Megalo
+Fossil Dig; Jurrac Megalo
+Fossil Dig; Miscellaneousaurus 
+Miscellaneousaurus ;Jurrac Megalo
+Animadorned Archosaur ;Jurrac Megalo
+Animadorned Archosaur ;Miscellaneousaurus 
+Animadorned Archosaur ;Fossil Dig
 
 :gamble effects
 Pot of Prosperity ;3;1
