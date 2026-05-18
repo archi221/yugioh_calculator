@@ -2,7 +2,7 @@ Monster
 3 Legendary Fire King Ponix ;Fire
 3 Fire King Courtier Ulcanix ;Fire
 3 Fire King High Avatar Kirin ;Fire
-3 Sacred Fire King Garunix ;Fire
+2 Sacred Fire King Garunix ;Fire
 1 Miscellaneousaurus ;Fire
 3 Jurrac Megalo ;Fire
 1 Fire King Avatar Kirin ;Fire
@@ -10,12 +10,12 @@ Monster
 1 Fire King Avatar Arvata ;Fire
 3 Mulcharmy Fuwalos
 1 Animadorned Archosaur
+1 Fire King Avatar Barong ;Fire
 Spell
 3 Fire King Sanctuary ;Field
 2 Fire King Island ;Field
-1 Called by the Grave
 1 Fire King Sky Burn
-3 Super Polymerization
+4 Super Polymerization
 3 Forbidden Droplet
 1 Pot of Prosperity
 3 Fossil Dig ;Fire
@@ -27,7 +27,7 @@ Fire King Courtier Ulcanix ;Fire
 Fire ;Field
 Fire ;Sacred Fire King Garunix ;Fire King High Avatar Kirin
 Sacred Fire King Garunix; Miscellaneousaurus
-Fire King High Avatar Kirin; Jurrac Megalo
+
 Fossil Dig; Jurrac Megalo
 Fossil Dig; Miscellaneousaurus 
 Miscellaneousaurus ;Jurrac Megalo

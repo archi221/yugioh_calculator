@@ -128,8 +128,8 @@ Unique Playabal_hands: {len(playabal_hands)}
             counter += 1
         if gamba_playability:
             gamba_counter += 1
-    print(f"Playabal: {counter / testing_hands * 100}% of times")
-    print(f"Playabal with gambling: {gamba_counter / testing_hands * 100}% of times")
+    print(f"Playabal: {counter / testing_hands * 100:.4f}% of times")
+    print(f"Playabal with gambling: {gamba_counter / testing_hands * 100:.4f}% of times", flush=True)
 
 def main():
     TestDeckConsistency(file)
